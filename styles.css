@@ -9,12 +9,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    /* background: #210123f5;  */
+     background: #0e0e0e;  
     /* background: rgba(33, 1, 35, 0.99); */
-    background: linear-gradient(to bottom, rgba(33, 1, 35, 0.99), rgba(0, 0, 0, 0.99));
+    /* background: linear-gradient(to bottom, rgba(33, 1, 35, 0.99), rgba(0, 0, 0, 0.99));  */
+    /* background: linear-gradient(to bottom, rgba(13, 13, 13, 0.99), rgba(217, 129, 14, 0.99));  */
 
     
-    color:white;
+    /* color:rgb(234, 121, 9); */
+    color: white;
     min-height: 100vh;
     width: 100%;
     /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/im1.jpg); */
@@ -24,55 +26,55 @@ body{
 
 }
 
-/* .header{
-    min-height: 100vh;
-width: 100%;
-background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/cover/save2.jpg);
-background-position: center;
-background-size: cover;
-position:relative;
-} */
 
 #header{
+    /* this isit
     width: 100%;
     height: 100vh;
+    background:#210123f5;
      background-image: url(images/background.png); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    transition: background-position 0.2s ease-out;; */
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #0e0e0e;
+
+
+   
    
 }
-/* .home-content h1{
-    font-size: 5.6rem;
-    font-weight: 700;;
-}
-.home-content p{
-    font-size: 1.6rem;
-}
-
-.profession-container{
+.img-box{
+    width: 45%;
+    height: 80%;
     position: absolute;
-    top:50%;
-    right: 0;
-    transform: translateY(-50%);
-    width:768px;
-    height:768px;
-    background: red;
-    overflow: hidden;
-    pointer-events: none;
-} */
+    bottom: 0;
+    right: 100px;
 
-
-
-/* .logo{
-    font-size: 2.5rem;
-    color:#c;
-    font-weight: 600;
-    cursor: default;
-    margin-right: auto;
 }
-.logo a{
-    text-decoration: none;
-} */
+
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+
+.img-box:hover .back-img{
+    bottom: 40px;
+
+}
+
+.img-box:hover .main-img{
+    left: 54%;
+
+}
+
 
 .container{
     padding: 10px 10%;
@@ -80,6 +82,7 @@ position:relative;
 }
 
 nav{
+    width: 100%;;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,6 +101,7 @@ nav ul li{
 
 }
 nav ul li a{
+    /* color: rgb(236, 123, 9); */
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -107,7 +111,7 @@ nav ul li a::after{
     content:' ';
     width: 0;
     height: 3px;
-    background: #07e442;
+    background: rgb(236, 123, 9);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -118,8 +122,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
-    font-size: 30px;
+    /* margin-top: 20%;
+    font-size: 30px; */
+    margin-top: 130px;
+    max-width: 600px;
 
 }
 
@@ -129,7 +135,38 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    color:#03e762;
+    color:rgb(236, 123, 9);
+}
+
+/* .user-box{
+    background: #e6bde8;
+    position: absolute;
+    top:0;
+    right:12%;
+}
+.user-box img{
+    display: block;
+    padding-top: 100px;
+    width: 410px;
+    margin-bottom: -205px;
+
+} */
+
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    
 }
 
 /* ----------------------------about----------------------------------- */
@@ -182,7 +219,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background:#03e762 ;
+    background:rgb(236, 123, 9); ;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -200,7 +237,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #03e762;
+    color: rgb(236, 123, 9);
     font-size: 14px;
 
 }
@@ -256,7 +293,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #03e762;
+    background: rgb(236, 123, 9);
     transform: translateY(-10px);
 }
 
@@ -291,7 +328,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#03e762);
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(236, 135, 34));
     border-radius:10px;
     position: absolute;
     left: 0;
@@ -315,7 +352,8 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #03e762;
+    color: rgb(236, 123, 9);
+    text-decoration: none; 
     font-size: 18px;
     line-height: 60px;
     background: #fff;
@@ -339,7 +377,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width:fit-content;
-    border: 1px solid #03e762;
+    border: 1px solid rgb(236, 123, 9);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -348,7 +386,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #03e762;
+    background: rgb(236, 123, 9);
     
 }
 
@@ -366,7 +404,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #03e762;
+    color: rgb(236, 123, 9);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -384,12 +422,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #03e762;
+    color: rgb(236, 123, 9);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #03e762;
+    background: rgb(236, 123, 9);
 }
 
 .contact-right form{
@@ -424,7 +462,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color:#03e762
+    color:rgb(236, 123, 9);
 }
 
 nav .fa-solid{
@@ -451,7 +489,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #03e762;
+        background: rgb(236, 123, 9);
         position: fixed;
         top: 0;
         right: -200;
@@ -504,7 +542,7 @@ nav .fa-solid{
 }
 
 #msg{
-    color: #61b752;
+    color: rgb(236, 123, 9);
     margin-top: -40px;
     display: block;
 }
