@@ -135,6 +135,7 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
+    font-size: 70px;
     color:rgb(236, 123, 9);
 }
 
@@ -352,14 +353,14 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: rgb(236, 123, 9);
+    color: rgb(10, 10, 10);
     text-decoration: none; 
     font-size: 18px;
-    line-height: 60px;
+    /* line-height: 60px;
     background: #fff;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
+    border-radius: 50%; */
     text-align: center;
 
     
@@ -475,13 +476,25 @@ nav .fa-solid{
         background-image: url(images/phone-background.png);
       
     }
+    .img-box{
+        /* display: none; */
+        width: 20%;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+    
+    }
     .header-text{
-        margin-top: 50%;
-        font-size: 16px;
+        margin-top: 30%;
+        font-size: 20px;
     }
 
     .header-text h1{
-        font-size: 30px;
+        font-size: 40px;
+    }
+    .header-text h1 span{
+        font-size: 50px;
     }
     nav .fa-solid{
         display: block;
