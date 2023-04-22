@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="aboutstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="about.html">WEB SITE</a></li>
+                        <li><a href="miniapp.html">MINI APP</a></li>
+                        <li><a href="management.html">MANAGEMENT APPLICATIONS</a></li>
+                        <li><a href="ecommerce.html">ECOMMERCE</a></li>
+                        <li><a href="index.html">BACK </a></li>
+                    </ul>
+
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Ecommerce Web Sites</h1>
+           
+        </section>
+            <!-- about us content -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>ANNA JONES - Cosmetics purchasing Application</h1>
+                    <p>Created with MongoDB,ExpressJs,React,NodeJs..In here Students canbe given homeword in our application after creating an account successfully.Customers can log in to system after creating account successfullly..They are able to purchage products</p>
+                    <a href="https://github.com/shashikamahanama19970709/ANNAJONES-cosmetics-purchasing-website" class="hero-btn red-btn">EXPORE NOW</a>
+                </div>
+           
+
+
+                <div class="about-col">
+                     <!-- image Slider Start -->
+
+                     <div class="sliders">
+                        <div class="slides">
+                                <!-- radio button start -->
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+                                <input type="radio" name="radio-btn" id="radio5">
+                                <!-- radio button end -->
+
+                                <!-- slide images start -->
+                                <div class="slide first">
+                                    <img src="images/new/screencapture-localhost-3000-2023-04-22-03_23_23 (2).jpg" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/new/screencapture-localhost-3000-checkout-2023-04-22-04_53_36.jpg" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/new/screencapture-localhost-3000-Order-2023-04-22-04_52_43.jpg" alt="">
+                                </div>
+                                
+                                <!-- slide images end -->
+                                <!-- automatic navigation start -->
+
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    
+                                </div>
+                                <!-- automatic navigation end -->
+
+                        </div>
+
+                        <!-- manual navifation start -->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+
+
+                        </div>
+                        <!-- manual navigation stops -->
+                    </div>
+
+                    <!-- image slider end -->
+ 
+
+                    
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <!-- about us content -->
+<!-- <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Student Management System </h1>
+            <p>Created with SpringBoot, </p>
+            <a href="https://github.com/shashikamahanama19970709/SpringBoot_crudOperations" class="hero-btn red-btn">EXPORE NOW</a>
+        </div>
+   
+
+        <div class="about-col">
+            <img src="images/people/t3.jpg">
+
+            
+        </div>
+    </div>
+
+</section> -->
+
+
+
+
+
+
+
+</section>
+
+<!-- </section>
+<section class="about-us">
+<div class="row">
+    <div class="about-col">
+        <h1>We are the World's Largest House Builders</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem totam quidem eaque, quod reprehenderit beatae maiores provident eveniet officia fugiat eius sed, minima distinctio eos natus laboriosam. Itaque, debitis?</p>
+        <a href="" class="hero-btn red-btn">EXPORE NOW</a>
+    </div>
+
+
+    <div class="about-col">
+        <img src="images/people/t3.jpg">
+
+        
+    </div>
+</div>
+
+</section> -->
+
+       
+       
+            <!-- Footer -->
+            <section class="footer">
+                <h4>About Us</h4>
+                
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                
+                </div>
+                <p>Made With <i class="fas fa-heart"></i> shashika mahanama</p>
+            </section>
+
+
+
+        <!-- this is js toggle menu -->
+
+        <script>
+            var navLinks =document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200";
+            }
+        </script>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+                
+            }, 5000);
+        
+        </script>
+    </body>
+</html>
